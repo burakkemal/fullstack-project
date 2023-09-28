@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-3 my-3" *ngFor="let order of Orders">
+      <app-order-card
+        [shipName]="order.shipName"
+        [shipAddress]="order.shipAddress"
+        [shipCountry]="order.shipCountry"
+        [shipCity]="order.shipCity"
+      >
+      </app-order-card>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container">
+    <div class="row">
+      <div
+        *ngFor="let product of productList"
+        class="col-12 col-sm-6 col-md-3 my-3 "
+      >
+      <app-product-card
+      [title]="product.name"
+      [description]="'STOK: ' + product.unitsInStock"
+      [price]="product.unitPrice"
+      [id]="product.id"
+      (onDelete)="getAll()"
+    ></app-product-card>
+      </div>
+    </div>
+  </div> -->

@@ -1,0 +1,14 @@
+/* Küçük ekranlar için */
+@media (max-width: 767px) {
+    .button {
+      justify-content: flex-start;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Orta ve büyük ekranlar için */
+  @media (min-width: 768px) {
+    .card-body .btn {
+      margin-right: 1px;
+    }
+  }
