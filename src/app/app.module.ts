@@ -1,3 +1,4 @@
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -41,6 +42,7 @@ import { SocketIoModule } from 'ngx-socket-io';
       url: 'http://localhost:9000/',
       options: {},
     }),
+    LazyLoadImageModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
